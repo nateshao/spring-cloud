@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/SpringCloud.iml" filepath="$PROJECT_DIR$/.idea/SpringCloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nateshao-cloud-02-mybatis/nateshao-cloud-02-mybatis.iml" filepath="$PROJECT_DIR$/nateshao-cloud-02-mybatis/nateshao-cloud-02-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nateshao-cloud-02-mybatis/user-consumer/user-consumer.iml" filepath="$PROJECT_DIR$/nateshao-cloud-02-mybatis/user-consumer/user-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nateshao-cloud-02-mybatis/user-service/user-service.iml" filepath="$PROJECT_DIR$/nateshao-cloud-02-mybatis/user-service/user-service.iml" />
+    </modules>
+  </component>
+</project>
