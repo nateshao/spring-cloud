@@ -10,7 +10,14 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
-
+/**
+ * @date Created by 邵桐杰 on 2020/8/28 0:33
+ * @微信公众号 千羽的编程时光
+ * @个人网站 www.nateshao.cn
+ * @博客 https://nateshao.gitee.io
+ * @GitHub https://github.com/nateshao
+ * @Gitee https://gitee.com/nateshao
+ */
 @RestController
 @RequestMapping("/consumer")
 @Slf4j
