@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringCloud.iml" filepath="$PROJECT_DIR$/.idea/SpringCloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nateshao-cloud-02-mybatis/euraka-server/euraka-server.iml" filepath="$PROJECT_DIR$/nateshao-cloud-02-mybatis/euraka-server/euraka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/nateshao-cloud-02-mybatis/nateshao-cloud-02-mybatis.iml" filepath="$PROJECT_DIR$/nateshao-cloud-02-mybatis/nateshao-cloud-02-mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/nateshao-cloud-02-mybatis/user-consumer/user-consumer.iml" filepath="$PROJECT_DIR$/nateshao-cloud-02-mybatis/user-consumer/user-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/nateshao-cloud-02-mybatis/user-service/user-service.iml" filepath="$PROJECT_DIR$/nateshao-cloud-02-mybatis/user-service/user-service.iml" />
