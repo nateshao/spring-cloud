@@ -7,7 +7,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 
 @SpringBootApplication
 @MapperScan("com.nateshao.user.mapper")
-//@EnableDiscoveryClient //开启Eureka客户端发现功能
+@EnableDiscoveryClient  //开启Eureka客户端发现功能
 public class UserApplication {
     public static void main(String[] args) {
         SpringApplication.run(UserApplication.class, args);
