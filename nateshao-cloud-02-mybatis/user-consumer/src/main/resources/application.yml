@@ -28,13 +28,13 @@ ribbon:
 feign:
   hystrix:
     enabled: true # 开启Feign的熔断功能
-#  compression:
-#    request:
-#      enabled: true # 开启请求压缩
-#      mime-types: text/html,application/xml,application/json # 设置压缩的数据类型
-#      min-request-size: 2048 # 设置触发压缩的大小下限
-#    response:
-#      enabled: true
-#logging:
-#  level:
-#    com.itheima: debug
+  compression:
+    request:
+      enabled: true # 开启请求压缩
+      mime-types: text/html,application/xml,application/json # 设置压缩的数据类型
+      min-request-size: 2048 # 设置触发压缩的大小下限
+    response:
+      enabled: true
+logging:
+  level:
+    com.nateshao: debug
