@@ -27,29 +27,29 @@ public class ConsumerController {
     private DiscoveryClient discoveryClient;
 
     @GetMapping("/{id}")
-    //@HystrixCommand(fallbackMethod = "queryByIdFallback")
+    @HystrixCommand(fallbackMethod = "queryByIdFallback")
 //    @HystrixCommand
     public String queryById(@PathVariable Long id){
-//        if (id == 1) {
-//            throw new RuntimeException("太忙了");
-//        }
-        String url = "http://localhost:9091/user/"+id;
-//
-        //获取eureka中注册的user-service的实例
-        List<ServiceInstance> serviceInstances = discoveryClient.getInstances("user-service");
-        ServiceInstance serviceInstance = serviceInstances.get(0);
+        if (id == 1) {
+            throw new RuntimeException("太忙了");
+        }
+//        String url = "http://localhost:9091/user/"+id;
 
-        url = "http://" + serviceInstance.getHost() + ":" + serviceInstance.getPort() + "/user/" + id;
-//        String url = "http://user-service/user/" + id;
+        //获取eureka中注册的user-service的实例
+//        List<ServiceInstance> serviceInstances = discoveryClient.getInstances("user-service");
+//        ServiceInstance serviceInstance = serviceInstances.get(0);
+
+//        url = "http://" + serviceInstance.getHost() + ":" + serviceInstance.getPort() + "/user/" + id;
+        String url = "http://user-service/user/" + id;
         return restTemplate.getForObject(url, String.class);
     }
 
-//    public String queryByIdFallback(Long id){
-//        log.error("查询用户信息失败。id：{}", id);
-//        return "对不起，网络太拥挤了！";
-//    }
-//
-//    public String defaultFallback(){
-//        return "默认提示：对不起，网络太拥挤了！";
-//    }
+    public String queryByIdFallback(Long id){
+        log.error("查询用户信息失败。id：{}", id);
+        return "对不起，网络太拥挤了！";
+    }
+
+    public String defaultFallback(){
+        return "默认提示：对不起，网络太拥挤了！";
+    }
 }
