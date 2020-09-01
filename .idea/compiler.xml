@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="user-service" />
         <module name="user-consumer" />
+        <module name="user-gateway" />
         <module name="euraka-server" />
       </profile>
     </annotationProcessing>
@@ -15,6 +16,7 @@
       <module name="euraka-server" target="1.8" />
       <module name="nateshao-cloud-02-mybatis" target="1.8" />
       <module name="user-consumer" target="1.8" />
+      <module name="user-gateway" target="1.8" />
       <module name="user-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -22,6 +24,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="euraka-server" options="-parameters" />
       <module name="user-consumer" options="-parameters" />
+      <module name="user-gateway" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>
   </component>

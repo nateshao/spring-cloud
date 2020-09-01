@@ -12,6 +12,7 @@
         <module>user-service</module>
         <module>user-consumer</module>
         <module>euraka-server</module>
+        <module>user-gateway</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
